@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h3>Array</h3>
+
+    <script>
+        const names =["siddhi","Neha","Prisha","Akku","Siya"];
+        
+        console.log("Array Elements  :");
+        console.log(names);
+        document.write("<br>Array Elements :");
+        document.write(names);
+     
+       
+           
+        console.log("4th index Element : ");
+        console.log(names[3]);
+        document.write("<br><br>4th index Element : ");
+        document.write(names[3]);
+
+        document.write("<br><br>Length of array :");
+        document.write(names.length);
+        console.log("Length of array :");
+        console.log(names.length);
+
+        
+        document.write("<br><br>Index no of element (Rutuja) in array :");
+        document.write(names.indexOf("Rutuja"));
+        console.log("Index no element of (Rutuja) in array :");
+        console.log(names.indexOf("Sayli"));
+
+
+        document.write("<br><br>Replace element using index  :  ");
+        names[3]="shobha";
+        document.write(names);
+      
+
+        document.write("<br><br>Add element at end using Push function :" );
+        names.push("janvi");
+        document.write(names); 
+        
+
+        document.write("<br><br>Remove last element using Pop function:");
+        names.pop();
+        document.write(names); 
+
+        document.write("<br><br>Add element at start position using unshift function:");
+        names.unshift("Aishwarya");
+        document.write(names);
+       
+
+        document.write("<br><br>Remove element at start position using shift function    :");
+        names.shift();
+        document.write(names); 
+
+        document.write("<br><br>Add and delete elements at once using splice function :");
+        names.splice( 2 , 1 , "shrusti" ,"vaishu");
+        document.write(names);
+
+        document.write("<br><br>Array to string using join function :");
+        document.write(names.join("  "));
+
+
+        document.write("<br><br>Reverse the array using reverse function :");
+        document.write(names.reverse());
+
+        document.write("<br><br>Sort array in ascending using sort function :");
+        document.write(names.sort());
+
+        document.write("<br><br>Sort Array in decending using sort function :");
+        document.write(names.sort().reverse());
+
+
+    </script>
+</body>
+</html>
